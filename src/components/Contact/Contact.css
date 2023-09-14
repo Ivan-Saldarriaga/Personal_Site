@@ -1,0 +1,58 @@
+#contact h1{
+    color: var(--accent-1);
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+#contact h2{
+    font-size: 4rem;
+}
+#contact .opportunity {
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#contact .opp_list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+#contact .opp_list li {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact img {
+    height: 30px;
+    width: 30px;
+}
+@media (max-width: 768px) {
+    #contact .opportunity {
+        text-align: center;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    #contact .opp_list {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #contact .opp_list li {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact img {
+        height: 30px;
+        width: 30px;
+    }
+}

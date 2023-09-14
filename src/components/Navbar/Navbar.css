@@ -1,0 +1,45 @@
+nav {
+    /* will stay at the top! */
+    position: fixed;
+    /* top: 24px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+    background: linear-gradient(to bottom,  var(--accent-3) 50px, transparent);
+    /* background-color: var(--accent-3); */
+    /* border-radius:10px; */
+    padding: 5px 32px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 50px;
+    align-items: center;
+    justify-content: conter;
+}
+nav ul li a {
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+}
+/* Media query for devices with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    nav {
+        /* Adjust navigation styles for mobile devices */
+        background: var(--accent-3); /* Change background color */
+        justify-content: center; /* Distribute items horizontally */
+        padding: 10px; /* Increase padding for better spacing */
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; /* Wrap items onto new lines */
+        justify-content: center; /* Center items horizontally */
+        align-items: center;
+        gap: 30px;
+    }
+    
+    /* You can define more rules for mobile devices here */
+}

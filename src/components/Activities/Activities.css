@@ -1,0 +1,38 @@
+#activities h1{
+    color: var(--accent-1);
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+#activities h2{
+    font-size: 4rem;
+}
+#activities .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#activities .projects {
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next row */
+    justify-content: center; /* Center content horizontally */
+}
+#activities .projects img{
+    height: 14rem;
+    transition: transform 0.3s, filter 0.3s;
+}
+#activities .projects img:hover {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+@media (max-width: 1200px) {
+    #activities .content-container {
+        grid-template-columns: auto; /* Set to a single column layout */
+        gap: 30px;
+    }
+
+    #activities .projects {
+        justify-content: center; /* Align images to start of column */
+    }
+}

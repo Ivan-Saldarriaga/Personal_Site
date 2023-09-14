@@ -1,0 +1,52 @@
+header{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(../../assets/wayu.png);
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header .wrapper {
+    position: relative;
+    height: 100vh;
+}
+header .cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('path/to/your-background-image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Adjust the sizing to fit your image */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%; /* Adjust the width as desired */
+    height:fit-content; /* Adjust the height as desired */
+    text-align: center;
+    /* backdrop-filter: blur(5px); Apply a backdrop filter */
+    background-color: var(--accent-3);
+    color: white; /* Add text color */
+    padding: 20px; /* Add padding as needed */
+    border-radius: 50px;
+}
+header .cta .welcome-statement{
+    
+    text-rendering: optimizeLegibility;
+    font-size: 4.5rem;
+    color: #fff;
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+}
+@media (max-width: 768px) {
+    header .cta {
+        width: 90%; /* Adjust the width for mobile devices */
+        height: auto; /* Adjust the height as needed for mobile */
+        padding: 20px; /* Adjust padding for mobile */
+        border-radius: 20px; /* Adjust the border radius for rounded corners on mobile */
+    }
+}
+

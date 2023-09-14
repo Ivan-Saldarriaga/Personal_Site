@@ -1,0 +1,144 @@
+#about {
+    padding-top: 7rem;
+    /* padding-bottom: 15rem; */
+    color: white;
+}
+ul {
+    list-style-type: none;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: var(--accent-1);
+}
+.intro{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0 10px;
+    /* text-align: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 60%; */
+}
+.items_about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.items_about img{
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid #F06000;
+    border-radius: 50%;
+    margin: 1rem;
+    float: left;
+    outline: none;
+}
+.items_about .summary{
+    text-align: left;
+    display: flex;
+    margin: 1rem;
+    float: left;
+    align-items: center;
+}
+#about img{
+    border-radius: 50%;
+    outline: none;
+}
+#about h1{
+    color: var(--accent-1);
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+#about h2{
+    font-size: 4rem;
+}
+.row {
+    vertical-align: center;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 950px;
+    margin-bottom: 1rem;
+}
+.col-6 {
+    padding: 0 80px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+ul.bio-list li, ul.skill-bars li {
+   display: block;
+   margin-bottom: 10px;
+}
+ul.bio-list li strong,
+ul.skill-bars li strong,
+ul.bio-list li span,
+ul.skill-bars li span {
+    display: block; /* Vertically stack <strong> and <span> elements */
+}
+/* make the non headers a less FOCUS color */
+span, p, .summary {
+    color: lightgray;
+
+}
+.action-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+.action-btn .hire-me{
+    background-color: var(--accent-3);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.action-btn .hire-me:hover{
+    background-color: var(--accent-1);
+}
+@media (max-width: 768px) {
+    .col-6 {
+        width: 100%; /* Full width for mobile devices */
+        float: none; /* Remove the float */
+        margin-bottom: 20px; /* Add some spacing between stacked columns */
+        /* other styles for .col-6 on mobile devices */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .col-6 h3{
+        text-align: center;
+    }
+    ul.bio-list, ul.skill-bars {
+        padding-left: 0;
+    }
+    ul.bio-list li, ul.skill-bars li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .items_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .items_about img{
+        width: 7rem;
+        height: auto;
+    }
+    .items_about .summary{
+        text-align: center;
+        display: flex;
+        margin: 1rem;
+        float: left;
+        align-items: center;
+    }
+}

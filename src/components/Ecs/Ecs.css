@@ -1,0 +1,64 @@
+#ecs h1{
+    color: var(--accent-1);
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+#ecs h2{
+    font-size: 4rem;
+    color: white;
+}
+.opportunity {
+    vertical-align: center;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 950px;
+    margin-bottom: 4rem;
+}
+.opportunity > div {
+    margin-bottom: 1rem; /* Add some spacing between major divs */
+    position: relative;
+}
+
+.opportunity > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px; /* Adjust the position of the separator line */
+    left: 20px; /* Left padding */
+    right: 20px; /* Right padding */
+    height: 1px;
+    background-color: #ccc; /* Color of the separator line */
+}
+.odd{
+    
+}
+.about {
+    padding: 32px 12px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+}
+
+#ecs a {
+    font-size: 30px;
+    color: white;
+}
+#ecs p {
+    font-size: 20px;
+}
+#ecs img {
+    border-radius: 10px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    width: 380px;
+}
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Display items vertically */
+        align-items: center; /* Align items to the start of the column */
+        gap: 10px; /* Adjust spacing between items */
+    }
+}
